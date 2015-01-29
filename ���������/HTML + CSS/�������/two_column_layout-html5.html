@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+	<!-- 
+	   Следващия код е fix за по-стари версии на IE, защото не поддържа новите html5
+	   тагове, като header, footer, article, section, nav и др.
+	-->
+	
+	<!--[if IE]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		text-align:center;
+		font-weight: bold;
+	}
+   
+	.info {
+		font-size:11px;
+		font-style: italic;
+	}
+   
+
+	#wrapper {
+		width: 840px;
+		margin-left: auto;
+		margin-right: auto;
+		background: #CCCCCC;
+		padding:20px;
+	}
+
+	#siteHeader {
+		padding: 5px;
+		height:100px;
+		background: skyblue;
+		margin-bottom: 10px;
+	}
+
+	#siteNav {
+		padding: 5px;
+		background: #A8FFA2;
+		margin-bottom: 10px;
+	}
+
+	#sideBar {
+		float: left;
+		width:180px;
+		padding: 5px;
+		background: #94748B;
+		min-height: 500px;
+	}
+
+	#content {
+		width: 630px;
+		margin-left: 10px;
+		padding:5px;
+		float: left;
+		background: #C58700;
+		min-height: 500px;
+	}
+
+	#siteFooter {
+		padding:5px; 
+		clear: both;
+		height: 50px;
+		background: #18274A;
+		color: #FFFFFF;
+	}
+
+
+	article.post {
+		margin:20px;
+		background: #9A4D00;
+		padding: 20px;
+	}
+
+	article.post header, article.post p, article.post footer, article.post section  {
+		margin:10px;
+		background: #509C51;
+		padding: 5px;
+	}
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+    <header id="siteHeader" role="banner">
+       &lt;header&gt; &lt;/header&gt;
+	   <br />
+	   <span class="info">(Панел за хедарара на сайта, в който се съдържа заглавието на сайта, може и изображение за фон и др.)</span>
+    </header>
+
+    <nav id="siteNav">
+       &lt;nav&gt; &lt;/nav&gt;
+	   <br />
+	   <span class="info">(Панел с навигационното меню на сайта)</span>
+    </nav>
+
+
+    <aside id="sideBar">
+        &lt;aside&gt; &lt;/aside&gt;
+	    <br />
+	    <span class="info">(Панел за странична част, която може да включва менюта, панели с информация и др.)</span>
+    </aside>
+
+
+    <div id="content" reole="main">
+
+       <!-- article content -->
+
+       &lt;div&gt; &lt;/div&gt;
+	   <br />
+	   <span class="info">(Панел за съдържанието на страницата)</span>
+
+       <article class="post">
+ 
+           &lt;article&gt; &lt;/article&gt; 
+		   <br />
+		   <span class="info">(Статията която представя страницата. Под статия се разбира описание на продукт, новина и др.)</span>
+          
+          <header class="article-head">
+             &lt;header&gt; &lt;/header&gt;
+			 <br />
+			<span class="info">(Всяка статия може да има собствен хедър, в който да включва заглавие &lt;h1&gt; &lt;/h1&gt; и др.)</span>
+          </header>
+
+          <p>
+              &lt;p&gt; &lt;/p&gt;
+			  <br />
+			  <span class="info">(описанието на статията се задава в параграфи)</span>
+          </p>
+
+          <footer class="article-footer">
+              &lt;footer&gt; &lt;/footer&gt;
+			  <br />
+		      <span class="info">(футър на статията, който включва препратики)</span>
+          </footer>
+
+          <section id="comments">
+             &lt;section&gt; &lt;/section&gt;
+			 <br />
+			<span class="info">(Към всяка статия може да има една или повече секции, напримерно с коментари или информация за други свързани със статията елементи)</span>
+          </section>
+       </article>
+
+    </div>
+
+
+
+    <footer id="siteFooter" role="contentinfo">
+        &lt;footer&gt; &lt;/footer&gt;
+		<br />
+		<span class="info">(футър на сайта)</span>
+    </footer>
+</div>
+
+
+</body>
+</html>

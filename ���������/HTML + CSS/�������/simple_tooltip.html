@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <style type="text/css">
+
+div {
+    font-size: 13px;
+    font-family: verdana;
+}
+
+a.toolTip {
+    color: #000000;
+    text-decoration: none;
+    cursor: help;
+    border-bottom: dashed 1px #000000;
+}
+
+a.toolTip span {
+    display: none;
+}
+
+a.toolTip:hover span {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: #EEEEEE;
+    font-style: italic;
+    padding: 5px 5px 5px 5px;
+    border: solid 1px #DDDDDD;
+    width: 300px;
+}
+
+a.toolTip:hover {
+    position: relative;
+}
+	
+  </style>
+</head>
+
+<body>
+
+<div>
+This is a simple <a href="#" class="toolTip">tooltip<span>A message that appears when a cursor is positioned over an icon, image, hyperlink, or other element in a graphical user interface.</span></a> made only with HTML & CSS.
+</div>
+	
+
+</body>
+
+</html>

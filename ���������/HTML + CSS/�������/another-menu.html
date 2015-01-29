@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+	    padding:10px;
+		margin:0;
+		background-color: #d0e4fe;
+	}
+
+	ul.menu {
+		list-style: outside none none;
+		margin: 0px;
+		padding: 5px;
+		white-space: nowrap;
+		background: none repeat scroll 0% 0% #EAEAED;
+		border-radius: 5px;
+		border: 1px solid #C7C7C7
+	}
+
+	ul.menu > li {
+	   display: inline-block;
+	   margin: 0px;
+	   padding: 0px;
+	   box-sizing: border-box;
+	}
+
+	ul.menu > li a {
+	   padding: 0px 10px 0px;
+	   text-decoration: none;
+	   color: #1C3D64;
+	   display: inline-block;
+	   font-weight: bold;
+	}
+	ul.menu > li a:hover, ul.menu > li a:active {
+	   color: #00812D;
+	}
+	ul.menu > li a.selected {
+	   color: #DA7502;
+	}
+
+
+
+	div.box {
+		margin: 10px 0px 0px 0px;
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid #C7C7C7;
+		min-height: 100px;
+		background: #FFFFFF;
+	}
+</style>
+</head>
+<body>
+
+<ul class="menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#" class="selected">CSS</a></li>
+    <li><a href="#">JS</a></li>
+    <li><a href="#" class="active">Result</a></li>
+  </ul>
+
+ <div class="box">
+    some box content here
+ </div>
+
+</body>
+</html>
